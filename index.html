@@ -11,11 +11,13 @@
 
 <body>
     <script>
-        function toggleMenu() {
-            var element = document.getElementById("nav_side");
+        function toggleMenu(elemid) {
+            var element = document.getElementById(elemid);
             element.classList.toggle("open")
-            element = document.getElementById("nav_side_2");
-            element.classList.toggle("open_2")
+            if (element == nav_side) {
+                element = document.getElementById("nav_side_2");
+                element.classList.toggle("open")
+            }
         } 
     </script>
 
@@ -28,7 +30,7 @@
                     <img src="img/search.svg" alt="search"></a>
             </div>
             <div class="header_right">
-                <a class="menu_icon" href="#" onclick="toggleMenu()">
+                <a class="menu_icon" href="#" onclick="toggleMenu('nav_side')">
                     <img src="img/menu.svg" alt="menu"></a>
                 <a class="profile_icon" href="registration.html">
                     <img src="img/usericon.svg" alt="profile"></a>
@@ -42,7 +44,7 @@
 
     <div class="banner_wrapper">
         <nav class="nav_side" id="nav_side">
-            <img src="img/close.svg" alt="close" onclick="toggleMenu()">
+            <img src="img/close.svg" alt="close" onclick="toggleMenu('nav_side')">
             <h3>MENU</h3>
             <ul>
                 <li class="nav_side__category">MAN
@@ -108,7 +110,7 @@
             <div class="featured_items_grid">
                 <div class="featured_item">
                     <div class="featured_item_wrapper">
-                        <img src="img/products/prod1.png" alt="product">
+                        <img src="img/products/man1.png" alt="product">
                         <div class="featured_item_wrapper_dark">
                             <button class="add_to_cart">
                                 <img src="img/cart.svg" alt="Add to cart">
@@ -140,7 +142,7 @@
                 </div>
                 <div class="featured_item">
                     <div class="featured_item_wrapper">
-                        <img src="img/products/prod3.png" alt="product">
+                        <img src="img/products/man3.png" alt="product">
                         <div class="featured_item_wrapper_dark">
                             <button class="add_to_cart">
                                 <img src="img/cart.svg" alt="Add to cart">
@@ -156,7 +158,7 @@
                 </div>
                 <div class="featured_item">
                     <div class="featured_item_wrapper">
-                        <img src="img/products/prod4.png" alt="product">
+                        <img src="img/products/man4.png" alt="product">
                         <div class="featured_item_wrapper_dark">
                             <button class="add_to_cart">
                                 <img src="img/cart.svg" alt="Add to cart">
