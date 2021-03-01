@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - The Brand of Luxerous Fasion</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="img/fav.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        function toggleMenu(elemid) {
+            var element = document.getElementById(elemid);
+            element.classList.toggle("open")
+            if (element == nav_side) {
+                element = document.getElementById("nav_side_2");
+                element.classList.toggle("open")
+            }
+        } 
+    </script>
+
+    <header>
+        <div class="container">
+            <div class="header_left">
+                <a class="logo_icon" href="index.html">
+                    <img src="img/logo.svg" alt="logo"></a>
+                <a class="search_icon" href="#">
+                    <img src="img/search.svg" alt="search"></a>
+            </div>
+            <div class="header_right">
+                <a class="menu_icon" href="#" onclick="toggleMenu('nav_side')">
+                    <img src="img/menu.svg" alt="menu"></a>
+                <a class="profile_icon" href="registration.html">
+                    <img src="img/usericon.svg" alt="profile"></a>
+                <a class="cart_icon" href="cart.html">
+                    <img src="img/cart.svg" alt="cart">
+                    <span>55</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="catalog_top">
+        <nav class="nav_side" id="nav_side">
+            <img src="img/close.svg" alt="close" onclick="toggleMenu('nav_side')">
+            <h3>MENU</h3>
+            <ul>
+                <li class="nav_side__category">MAN
+                    <ul>
+                        <li class="nav_side__subcategory">Accessories</li>
+                        <li class="nav_side__subcategory">Bags</li>
+                        <li class="nav_side__subcategory">Denim</li>
+                        <li class="nav_side__subcategory">T-Shirts</li>
+                    </ul>
+                </li>
+                <li class="nav_side__category">WOMAN
+                    <ul>
+                        <li class="nav_side__subcategory">Accessories</li>
+                        <li class="nav_side__subcategory">Jackets & Coats</li>
+                        <li class="nav_side__subcategory">Polos</li>
+                        <li class="nav_side__subcategory">T-Shirts</li>
+                        <li class="nav_side__subcategory">Shirts</li>
+                    </ul>
+                </li>
+                <li class="nav_side__category">KIDS
+                    <ul>
+                        <li class="nav_side__subcategory">Accessories</li>
+                        <li class="nav_side__subcategory">Jackets & Coats</li>
+                        <li class="nav_side__subcategory">Polos</li>
+                        <li class="nav_side__subcategory">T-Shirts</li>
+                        <li class="nav_side__subcategory">Shirts</li>
+                        <li class="nav_side__subcategory">Bags</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner_wrapper_dark" id="nav_side_2"></div>
+        <div class="container">
+            <h1>NEW ARRIVALS</h1>
+            <div class="catalog_bread">
+                <a href="index.html">HOME</a>
+                <span>/</span>
+                <a href="catalog.html">MEN</a>
+                <span>/</span>
+                <a href="catalog.html">NEW ARRIVALS</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="productSlider">
+            <img src="img/products/wom4.png" alt="productImage" class="productImage">
+            <div class="productSlider__leftArrow"></div>
+            <div class="productSlider__rightArrow"></div>
+        </div>
+
+        <div class="productDescription container">
+            <div class="productDescription__collection">WOMEN COLLECTION</div>
+            <div class="productDescription__Line productDescription__Line_pink"></div>
+            <div class="productDescription__shortDes">MOSCHINO CHEAP AND CHIC</div>
+            <div class="productDescription__fullDes">Compellingly actualize fully researched processes before proactive
+                outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                Completely visualize parallel core competencies rather than exceptional portals.</div>
+            <div class="productDescription__price">$561</div>
+            <div class="productDescription__Line productDescription__Line_grey"></div>
+            <div class="productDescription__filters">
+                <div class="filter-parametr__dropdown filter-parametr__dropdown_grey">
+                    <div class="filter-parametr__dropdown_wrap" onclick="toggleMenu('color_form')">
+                        <span>CHOOSE COLOR</span>
+                        <img src="img/catalog/arrowdown.png" alt="dropdown">
+                    </div>
+                    <form class="filter_form" action="#" id="color_form">
+                        <label><input type="checkbox">Color 1</label>
+                        <label><input type="checkbox">Color 2</label>
+                        <label><input type="checkbox">Color 3</label>
+                    </form>
+                </div>
+                <div class="filter-parametr__dropdown filter-parametr__dropdown_grey">
+                    <div class="filter-parametr__dropdown_wrap" onclick="toggleMenu('size_form')">
+                        <span>CHOOSE SIZE</span>
+                        <img src="img/catalog/arrowdown.png" alt="dropdown">
+                    </div>
+                    <form class="filter_form" action="#" id="size_form">
+                        <label><input type="checkbox">XS</label>
+                        <label><input type="checkbox">S</label>
+                        <label><input type="checkbox">M</label>
+                        <label><input type="checkbox">L</label>
+                    </form>
+                </div>
+                <div class="filter-parametr__dropdown filter-parametr__dropdown_grey">
+                    <div class="filter-parametr__dropdown_wrap" onclick="toggleMenu('quantity_form')">
+                        <span>QUANTITY</span>
+                        <img src="img/catalog/arrowdown.png" alt="dropdown">
+                    </div>
+                    <form class="filter_form" action="#" id="quantity_form">
+                        <label><input class="quantity_form" type="input" placeholder="1" min="1" maxlength="3"
+                                size="3"></label>
+                    </form>
+                </div>
+            </div>
+
+            <a class="add-to-cart productDescription__add-to-cart">
+                <img src="img/cart-pink.svg" alt="Add to cart">
+                <div>Add to cart</div>
+            </a>
+        </div>
+
+        <div class="featured_items_grid container">
+            <div class="featured_item">
+                <div class="featured_item_wrapper">
+                    <img src="img/products/man1.png" alt="product">
+                    <div class="featured_item_wrapper_dark">
+                        <a class="add-to-cart">
+                            <img src="img/cart.svg" alt="Add to cart">
+                            <div>Add to cart</div>
+                        </a>
+                    </div>
+                </div>
+                <a class="product_link product_name_link" href="product.html">ELLERY X M'O CAPSULE</a>
+                <a class="product_link product_description_link" href="product.html">Known for her sculptural
+                    takes
+                    on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</a>
+                <a class="product_link product_price_link" href="product.html">$54.69</a>
+            </div>
+            <div class="featured_item">
+                <div class="featured_item_wrapper">
+                    <img src="img/products/man2.png" alt="product">
+                    <div class="featured_item_wrapper_dark">
+                        <a class="add-to-cart">
+                            <img src="img/cart.svg" alt="Add to cart">
+                            <div>Add to cart</div>
+                        </a>
+                    </div>
+                </div>
+                <a class="product_link product_name_link" href="product.html">ELLERY X M'O CAPSULE</a>
+                <a class="product_link product_description_link" href="product.html">Known for her sculptural
+                    takes
+                    on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</a>
+                <a class="product_link product_price_link" href="product.html">$54.69</a>
+            </div>
+            <div class="featured_item">
+                <div class="featured_item_wrapper">
+                    <img src="img/products/man3.png" alt="product">
+                    <div class="featured_item_wrapper_dark">
+                        <a class="add-to-cart">
+                            <img src="img/cart.svg" alt="Add to cart">
+                            <div>Add to cart</div>
+                        </a>
+                    </div>
+                </div>
+                <a class="product_link product_name_link" href="product.html">ELLERY X M'O CAPSULE</a>
+                <a class="product_link product_description_link" href="product.html">Known for her sculptural
+                    takes
+                    on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</a>
+                <a class="product_link product_price_link" href="product.html">$54.69</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_top container">
+            <div class="footer_top_item">
+                <img src="img/delivery.svg" alt="delivery">
+                <h4>Free Delivery</h4>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive model</p>
+            </div>
+            <div class="footer_top_item">
+                <img src="img/sales_1.svg" alt="delivery">
+                <h4>Sales & discounts</h4>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive model</p>
+            </div>
+            <div class="footer_top_item">
+                <img src="img/crown_1.svg" alt="delivery">
+                <h4>Quality assurance</h4>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive model</p>
+            </div>
+        </div>
+        <div class="subscribe_mid">
+            <div class="container subscribe_mid_wrapper">
+                <div class="review">
+                    <img src="img/review.png" alt="face">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <div class="subscribe">
+                    <h2>SUBSCRIBE</h2>
+                    <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#">
+                        <input type="email" class="subscribe_input" placeholder="Enter Your Email">
+                        <button type="submit" class="subscribe_button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="rights">
+                <div>&copy; 2021 Brand All Rights Reserved.</div>
+            </div>
+            <div class="social">
+                <a href="#"><img src="img/f.svg" alt="facebook"></a>
+                <a href="#"><img src="img/inst.svg" alt="instagram"></a>
+                <a href="#"><img src="img/pinterest.svg" alt="pinterest"></a>
+                <a href="#"><img src="img/twitter.svg" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
