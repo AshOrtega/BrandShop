@@ -1,0 +1,105 @@
+/*navigation catalog*/
+
+.nav_catalog {
+    display: grid;
+    margin-top: 65px;
+    grid-gap: 32px;
+    margin: 64px 16px; 
+}
+
+.nav_catalog_item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.for_women, .for_men, .for_kids {
+    background-size: cover;
+    background-position: center;
+    min-height: 247px;
+    min-width: 232px;
+}
+
+.for_women {
+    background-image: url(img/forwomen.png);
+}
+
+.for_men {
+    background-image: url(img/formen.png);
+}
+
+.for_kids {
+    background-image: url(img/forkids.png);
+}
+
+.for_accesories {
+    background-image: url(img/foraccesories.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 111px;
+}
+
+.for_women:hover {
+    background-image: url(img/forwomen_br.png);
+}
+
+.for_men:hover {
+    background-image: url(img/formen_br.png);
+}
+
+.for_kids:hover {
+    background-image: url(img/forkids_br.png);
+}
+
+.for_accesories:hover {
+    background-image: url(img/foraccesories_br.png);
+}
+
+.nav_catalog_item h4 {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.nav_catalog_item h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--pink-color);
+}
+
+@media (min-width: 768px) {
+    .nav_catalog {
+        grid-gap: 19px;
+        margin: 20px 16px; 
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .for_accesories {
+        height: 116px;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+}
+
+@media (min-width: 1140px) {
+    .nav_catalog {
+        grid-gap: 30px;
+        margin: 64px 0; 
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .for_accesories {
+        min-height: 180px;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .for_women, .for_men, .for_kids {
+        min-height: 260px;
+    }
+}

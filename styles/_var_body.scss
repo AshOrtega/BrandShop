@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap');
+
+:root {
+    --menu-hight: 768px;
+    --pink-color: #F16D7F;
+    --light-pink-color: #F8F3F4;
+    --grey-color: #9F9F9F;
+    --grey-hover: rgba(58, 56, 56, 0.86);
+    --dark-grey-color: #5D5D5D;
+    --shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+}

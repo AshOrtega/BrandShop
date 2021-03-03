@@ -1,0 +1,17 @@
+@import "styles/_var_body";
+//header
+@import "styles/header/_header";
+@import "styles/header/_header_nav";
+//footer
+@import "styles/footer/_footer";
+//index_page
+@import "styles/index/_index_nav_category";
+@import "styles/index/_index_main";
+//catalog_page
+@import "styles/catalog/_catalog_top";
+@import "styles/catalog/_catalog_filters";
+@import "styles/catalog/_catalog_pagination";
+//product_page
+@import "styles/product/_product";
+//cart_page
+@import "styles/cart/_cart";
