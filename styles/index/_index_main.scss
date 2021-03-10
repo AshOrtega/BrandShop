@@ -30,17 +30,18 @@
     display: flex;
     flex-direction: column;
     max-width: 360px;
-    height: 581px;
+    height: 580px;
     text-align: left;
 }
 
 .featured_item_wrapper {
     width: 100%;
     position: relative;
+    height: 420px;
 }
 
 .featured_item_wrapper img {
-    height: 100%;
+    width: 100%;
 }
 
 
@@ -91,6 +92,7 @@
     text-decoration: none;
     color: black;
     margin-left: 18px;
+    margin-right: 18px;
 }
 
 .product_name_link {
